@@ -3,255 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>War Of The Medium - Privacy Policy</title>
-    <!-- Importo Montserrat per il corpo testo e Anton per i titoli (simile a Heavitas) -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>War Of The Medium - Privacy & Terms</title>
+    <!-- Anton per simulare il font Heavitas, Montserrat per il testo -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-color: #1A1816;
-            --surface-color: #24211E;
-            --card-color: #2C2926;
-            --accent-gold: #C5A059;
-            --text-primary: #EAE6D6;
-            --text-secondary: #A8A499;
+            --bg-color: #1A1816;       /* Background App */
+            --surface-color: #24211E;  /* Surface App */
+            --card-color: #2C2926;     /* Card App */
+            --accent-gold: #C5A059;    /* L'Oro militare dell'app */
+            --text-primary: #EAE6D6;   /* Bianco sporco */
+            --text-secondary: #A8A499; /* Grigio testo */
             --border-color: #423E38;
+            --success-color: #6B8E23;  /* Verde militare */
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
             font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--text-primary);
             background-color: var(--bg-color);
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
         .container {
-            max-width: 800px;
-            margin: 40px auto;
+            max-width: 900px;
+            margin: 0 auto;
             background: var(--surface-color);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            min-height: 100vh;
+            padding: 40px 20px;
+            border-left: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
         }
 
-        h1, h2, h3 {
-            font-family: 'Anton', sans-serif;
-            letter-spacing: 1.5px;
-            color: var(--accent-gold);
-            font-weight: normal;
+        /* --- HEADER TATTICO --- */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent-gold);
         }
 
         h1 {
-            text-align: center;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-            font-size: 2.2rem;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
         }
 
+        .subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            letter-spacing: 3px;
+            margin-top: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* --- TIPOGRAFIA --- */
         h2 {
-            margin-top: 40px;
-            font-size: 1.5rem;
+            font-family: 'Anton', sans-serif;
+            margin-top: 50px;
+            font-size: 1.8rem;
             color: var(--text-primary);
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 15px;
+            text-transform: uppercase;
         }
 
         h3 {
-            margin-top: 25px;
-            font-size: 1.2rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 30px;
+            font-size: 1.1rem;
             color: var(--accent-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         p, li {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 1rem;
+            margin-bottom: 15px;
         }
 
+        strong {
+            color: var(--text-primary);
+        }
+
+        /* --- LISTE STILE DOSSIER --- */
         ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
             background-color: var(--card-color);
-            padding: 20px 20px 20px 40px;
+            padding: 15px;
+            margin-bottom: 10px;
             border-radius: 8px;
-            border-left: 3px solid var(--accent-gold);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
         }
 
-        hr {
-            margin: 40px 0;
-            border: 0;
-            border-top: 1px solid var(--border-color);
+        li::before {
+            content: "➤";
+            color: var(--accent-gold);
+            margin-right: 15px;
+            font-weight: bold;
         }
 
-        .footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 0.8em;
-            color: var(--border-color);
-            border-top: 1px solid var(--border-color);
-            padding-top: 20px;
-        }
-
-        /* --- STILE LINGUE (TABS) --- */
+        /* --- BOTTONI LINGUA --- */
         .language-switcher {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 20px;
+            margin-bottom: 40px;
         }
 
         .lang-btn {
             background-color: var(--card-color);
             color: var(--text-secondary);
             border: 1px solid var(--border-color);
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-family: 'Heavitas', 'Anton', sans-serif;
+            padding: 12px 25px;
+            border-radius: 30px; /* Stile pillola come nell'app */
+            font-family: 'Anton', sans-serif;
             font-size: 1rem;
+            letter-spacing: 1px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
         .lang-btn:hover {
-            background-color: var(--border-color);
+            border-color: var(--accent-gold);
+            color: var(--text-primary);
         }
 
         .lang-btn.active {
             background-color: var(--accent-gold);
-            color: #000;
+            color: #1A1816; /* Testo scuro su oro */
             border-color: var(--accent-gold);
-            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
+            transform: translateY(-2px);
         }
 
+        /* --- ANIMAZIONI --- */
         .content-section {
             display: none;
-            animation: fadeIn 0.5s;
+            animation: slideUp 0.6s ease-out;
         }
 
         .content-section.active {
             display: block;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+            margin: 50px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+
+        a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent-gold);
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>WAR OF THE MEDIUM</h1>
+    <header>
+        <h1>War Of The Medium</h1>
+        <div class="subtitle">Archivio Storico Ufficiale</div>
+    </header>
     
-    <!-- TASTI SELEZIONE LINGUA -->
+    <!-- LINGUE -->
     <div class="language-switcher">
-        <button class="lang-btn active" id="btn-it" onclick="switchLang('it')">🇮🇹 ITALIANO</button>
-        <button class="lang-btn" id="btn-en" onclick="switchLang('en')">🇬🇧 ENGLISH</button>
+        <button class="lang-btn active" id="btn-it" onclick="switchLang('it')">ITALIANO</button>
+        <button class="lang-btn" id="btn-en" onclick="switchLang('en')">ENGLISH</button>
     </div>
 
     <!-- ========================================== -->
-    <!-- SEZIONE ITALIANA -->
+    <!-- ITALIANO (Realistico basato sul codice)    -->
     <!-- ========================================== -->
     <div id="content-it" class="content-section active">
-        <h2>Termini e Condizioni</h2>
-        <p>I presenti termini e condizioni si applicano all'app <strong>War of the Medium</strong> (di seguito denominata "Applicazione") per dispositivi mobili, creata da <strong>Francesco Campus</strong> (di seguito denominato "Fornitore del Servizio") come servizio gratuito.</p>
-        <p>Scaricando o utilizzando l'Applicazione, accetti automaticamente i seguenti termini. Ti consigliamo vivamente di leggerli e comprenderli a fondo prima di utilizzare l'Applicazione.</p>
-        <p>È severamente vietata la copia o la modifica non autorizzata dell'Applicazione, di qualsiasi sua parte o dei nostri marchi. Qualsiasi tentativo di estrarre il codice sorgente dell'Applicazione, tradurla in altre lingue o creare versioni derivate non è consentito. Tutti i marchi, i diritti d'autore, i diritti sui database e altri diritti di proprietà intellettuale relativi all'Applicazione rimangono di proprietà del Fornitore del Servizio.</p>
-        <p>Il Fornitore del Servizio si impegna a garantire che l'Applicazione sia il più utile ed efficiente possibile. Pertanto, si riserva il diritto di apportare modifiche all'Applicazione in qualsiasi momento. Non ti addebiteremo mai costi per l'Applicazione o per i suoi servizi senza comunicartelo in modo chiaro.</p>
-        <p>L'Applicazione memorizza e processa i dati che ci hai fornito allo scopo di erogare il Servizio. È tua responsabilità mantenere sicuro il tuo telefono e l'accesso all'Applicazione. Si sconsiglia vivamente di effettuare il jailbreak o il root del telefono. Tali azioni potrebbero esporre il dispositivo a malware e compromettere il corretto funzionamento dell'Applicazione.</p>
         
-        <h3>Modifiche ai presenti Termini e Condizioni</h3>
-        <p>Il Fornitore del Servizio può aggiornare periodicamente i propri Termini e Condizioni. Ti invitiamo pertanto a rivedere regolarmente questa pagina. Ti informeremo di eventuali modifiche pubblicando i nuovi Termini su questa pagina.</p>
-        <p>I presenti termini e condizioni sono in vigore dal <strong>02-03-2026</strong>.</p>
+        <h2>Termini di Servizio</h2>
+        <p>Utilizzando l'applicazione <strong>War of the Medium</strong>, accetti le seguenti condizioni. L'app è sviluppata da <strong>Francesco Campus</strong> come strumento educativo gratuito.</p>
+
+        <h3>1. Natura del Servizio</h3>
+        <p>L'app è un archivio storico digitale "offline-first". Non richiede la creazione di account, non prevede login social e non utilizza database in cloud per il salvataggio dei progressi di gioco.</p>
+
+        <h3>2. Dati e Progressi di Gioco</h3>
+        <p>Tutti i dati relativi a:</p>
+        <ul>
+            <li>Nome di Battaglia (Nickname)</li>
+            <li>Grado Militare e Punti Comando (PC)</li>
+            <li>Progressi di lettura dei capitoli</li>
+            <li>Risultati dei Quiz</li>
+        </ul>
+        <p>Sono salvati esclusivamente nella <strong>memoria locale del dispositivo</strong> (tramite tecnologia <em>SharedPreferences</em>). </p>
+        <p><strong>ATTENZIONE:</strong> Disinstallando l'applicazione o cancellando i dati della cache dalle impostazioni del telefono, tutti i progressi e il grado raggiunto andranno persi irreversibilmente. Lo sviluppatore non può recuperare questi dati.</p>
+
+        <h3>3. Uso Corretto</h3>
+        <p>È vietato decompilare, modificare o tentare di estrarre il codice sorgente e gli asset (immagini storiche, testi dei capitoli) dell'applicazione. Il materiale storico è rielaborato a scopo didattico.</p>
 
         <hr>
 
         <h2>Informativa sulla Privacy</h2>
-        <p>Questa informativa sulla privacy si applica all'app <strong>War of the Medium</strong> (di seguito "Applicazione"). Questo servizio è fornito "COSÌ COM'È".</p>
+        <p>La tua privacy è la priorità. Questa app è progettata per raccogliere il <strong>minimo indispensabile</strong> di dati.</p>
 
-        <h3>Raccolta e Utilizzo delle Informazioni</h3>
-        <p>L'Applicazione raccoglie alcune informazioni quando la scarichi e la utilizzi. Tali informazioni possono includere:</p>
+        <h3>1. Dati Raccolti e Trasmessi</h3>
+        <p>L'applicazione non traccia la tua posizione (GPS), non usa la fotocamera e non accede ai tuoi contatti. L'unico caso in cui dei dati lasciano il tuo dispositivo è:</p>
         <ul>
-            <li>L'indirizzo Protocollo Internet (IP) del tuo dispositivo</li>
-            <li>Le pagine dell'Applicazione che visiti, la data, l'ora e il tempo trascorso su di esse</li>
-            <li>Il tempo totale trascorso sull'Applicazione</li>
-            <li>Il sistema operativo in uso sul tuo dispositivo mobile</li>
+            <li><strong>Report dei Bug:</strong> Se utilizzi la funzione "Segnala un problema" nelle Impostazioni, invii volontariamente al nostro server (gestito tramite Google Script) il tuo Nickname, l'oggetto del problema e la descrizione. Questi dati servono solo per la risoluzione tecnica.</li>
         </ul>
-        <p>L'Applicazione <strong>non</strong> raccoglie informazioni precise sulla posizione del tuo dispositivo mobile (Nessun utilizzo GPS).</p>
-        <p>L'Applicazione <strong>non</strong> utilizza tecnologie di Intelligenza Artificiale (IA) per elaborare i tuoi dati o per fornire funzionalità.</p>
 
-        <h3>Accesso da parte di Terzi</h3>
-        <p>Solo dati aggregati e anonimizzati vengono periodicamente trasmessi a servizi esterni per aiutare il Fornitore del Servizio a migliorare l'Applicazione. Non condividiamo le tue informazioni con terze parti per scopi pubblicitari o di profilazione.</p>
+        <h3>2. Permessi Richiesti</h3>
+        <p>Per funzionare correttamente, l'app richiede i seguenti permessi Android:</p>
+        <ul>
+            <li><strong>INTERNET:</strong> Necessario esclusivamente per inviare i report dei bug e per aprire i link ai crediti (GitHub, Telegram). Il resto dell'app funziona offline.</li>
+            <li><strong>VIBRATE:</strong> Utilizzato per il "Feedback Tattile" (Haptic Feedback) durante la navigazione e i quiz. Può essere disattivato nelle Impostazioni.</li>
+        </ul>
 
-        <h3>Bambini</h3>
-        <p>Il Fornitore del Servizio non utilizza l'Applicazione per richiedere consapevolmente dati da, o per fare marketing a, bambini di età inferiore a 13 anni. Se ritieni che un bambino ci abbia fornito informazioni di identificazione personale, ti invitiamo a contattarci affinché possiamo prendere le misure necessarie per rimuoverle.</p>
+        <h3>3. Servizi Terzi</h3>
+        <p>L'app non contiene pubblicità (AdMob o simili) e non utilizza strumenti di analisi comportamentale invasivi.</p>
 
-        <h3>Sicurezza</h3>
-        <p>Il Fornitore del Servizio si preoccupa di salvaguardare la riservatezza delle tue informazioni. Forniamo tutele fisiche ed elettroniche per proteggere le informazioni che processiamo e manteniamo.</p>
-
-        <h3>Contattaci</h3>
-        <p>Se hai domande o suggerimenti riguardo ai Termini e Condizioni o all'Informativa sulla Privacy, non esitare a contattare il Fornitore del Servizio all'indirizzo: <strong>francescotech95@gmail.com</strong>.</p>
+        <h3>Contatti</h3>
+        <p>Per problemi tecnici o domande legali, contattare lo sviluppatore: <a href="mailto:francescotech95@gmail.com">francescotech95@gmail.com</a></p>
     </div>
 
     <!-- ========================================== -->
-    <!-- SEZIONE INGLESE -->
+    <!-- INGLESE (Traduzione accurata)              -->
     <!-- ========================================== -->
     <div id="content-en" class="content-section">
-        <h2>Terms & Conditions</h2>
-        <p>These terms and conditions apply to the <strong>War of the Medium</strong> app (hereby referred to as "Application") for mobile devices that was created by <strong>Francesco Campus</strong> (hereby referred to as "Service Provider") as a Free service.</p>
-        <p>Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application.</p>
-        <p>Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All intellectual property rights related to the Application remain the property of the Service Provider.</p>
-        <p>The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you.</p>
-        <p>The Application stores and processes data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Application. The Service Provider strongly advise against jailbreaking or rooting your phone, as it could compromise the Application's security and functionality.</p>
         
-        <h3>Changes to These Terms and Conditions</h3>
-        <p>The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes.</p>
-        <p>These terms and conditions are effective as of <strong>2026-03-02</strong>.</p>
+        <h2>Terms of Service</h2>
+        <p>By using the <strong>War of the Medium</strong> application, you agree to the following terms. This app is developed by <strong>Francesco Campus</strong> as a free educational tool.</p>
+
+        <h3>1. Service Nature</h3>
+        <p>The app is an "offline-first" historical archive. It requires no account creation, no social login, and does not use cloud databases to save game progress.</p>
+
+        <h3>2. Data and Game Progress</h3>
+        <p>All data regarding:</p>
+        <ul>
+            <li>Battle Name (Nickname)</li>
+            <li>Military Rank and Command Points (CP)</li>
+            <li>Chapter reading progress</li>
+            <li>Quiz results</li>
+        </ul>
+        <p>Are saved exclusively in the <strong>device's local storage</strong> (via <em>SharedPreferences</em> technology).</p>
+        <p><strong>WARNING:</strong> Uninstalling the application or clearing the app data from phone settings will result in the irreversible loss of all progress and ranks. The developer cannot recover this data.</p>
+
+        <h3>3. Fair Use</h3>
+        <p>Decompiling, modifying, or attempting to extract source code and assets (historical images, chapter texts) is prohibited. Historical material is reworked for educational purposes.</p>
 
         <hr>
 
         <h2>Privacy Policy</h2>
-        <p>This privacy policy applies to the <strong>War of the Medium</strong> app (hereby referred to as "Application"). This service is intended for use "AS IS".</p>
+        <p>Your privacy is our priority. This app is designed to collect the <strong>absolute minimum</strong> amount of data.</p>
 
-        <h3>Information Collection and Use</h3>
-        <p>The Application collects information when you download and use it. This information may include such details as:</p>
+        <h3>1. Collected and Transmitted Data</h3>
+        <p>The application does not track your location (GPS), does not use the camera, and does not access your contacts. The only instance where data leaves your device is:</p>
         <ul>
-            <li>Your device's Internet Protocol address (e.g. IP address)</li>
-            <li>The pages of the Application that you visit, the time and date of your visit</li>
-            <li>The total time spent on the Application</li>
-            <li>The operating system you use on your mobile device</li>
+            <li><strong>Bug Reporting:</strong> If you use the "Report a problem" feature in Settings, you voluntarily send your Nickname, subject, and description to our backend (Google Script). This data is used solely for technical resolution.</li>
         </ul>
-        <p>The Application does <strong>not</strong> gather precise information about the location of your mobile device.</p>
-        <p>The Application does <strong>not</strong> use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
 
-        <h3>Third Party Access</h3>
-        <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. We do not sell or share your data for marketing profiling.</p>
+        <h3>2. Required Permissions</h3>
+        <p>To function correctly, the app requests the following Android permissions:</p>
+        <ul>
+            <li><strong>INTERNET:</strong> Needed exclusively to send bug reports and open external credit links (GitHub, Telegram). The rest of the app works offline.</li>
+            <li><strong>VIBRATE:</strong> Used for "Haptic Feedback" during navigation and quizzes. This can be disabled in Settings.</li>
+        </ul>
 
-        <h3>Children</h3>
-        <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13. If you have reason to believe that a child has provided personally identifiable information to the Service Provider, please contact us so that we can take the necessary actions.</p>
+        <h3>3. Third-Party Services</h3>
+        <p>The app contains no advertisements and does not use invasive behavioral analysis tools.</p>
 
-        <h3>Security</h3>
-        <p>The Service Provider is concerned about safeguarding the confidentiality of your information. We provide procedural safeguards to protect information we process and maintain.</p>
-
-        <h3>Contact Us</h3>
-        <p>If you have any questions regarding privacy while using the Application, please contact the Service Provider via email at: <strong>francescotech95@gmail.com</strong>.</p>
+        <h3>Contact</h3>
+        <p>For technical issues or legal questions, contact the developer: <a href="mailto:francescotech95@gmail.com">francescotech95@gmail.com</a></p>
     </div>
 
-    <!-- FOOTER COMUNE -->
     <div class="footer">
-        <p>WOTM &copy; 2026 Francesco Campus. All rights reserved.</p>
+        <p>WAR OF THE MEDIUM &copy; 2026 Francesco Campus. All rights reserved.</p>
+        <p style="font-size: 0.7rem; margin-top: 5px;">Last Updated: March 2026</p>
     </div>
 </div>
 
-<!-- SCRIPT PER IL CAMBIO LINGUA -->
 <script>
     function switchLang(lang) {
-        // Rimuove classe active da tutti i bottoni e sezioni
-        document.getElementById('btn-it').classList.remove('active');
-        document.getElementById('btn-en').classList.remove('active');
-        document.getElementById('content-it').classList.remove('active');
-        document.getElementById('content-en').classList.remove('active');
+        // Reset classes
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.content-section').forEach(c => c.classList.remove('active'));
 
-        // Aggiunge la classe active alla lingua selezionata
+        // Activate selected
         document.getElementById('btn-' + lang).classList.add('active');
         document.getElementById('content-' + lang).classList.add('active');
     }
